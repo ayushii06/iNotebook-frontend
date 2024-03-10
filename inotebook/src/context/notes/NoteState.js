@@ -48,7 +48,7 @@ const NoteState = (props) => {
   const editNote = async (id, title, description, tag) => {
     //fetch api
 
-    const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
+   await fetch(`${host}/api/notes/updatenote/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -87,7 +87,7 @@ const NoteState = (props) => {
 
       },
     });
-    const json = response.json();
+    response.json();
    
     const newNotes = notes.filter((note) => {
       return note._id !== id
