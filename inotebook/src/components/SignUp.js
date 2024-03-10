@@ -11,7 +11,7 @@ const SignUp = () => {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://inotebook-backend-part-1.onrender.com/api/auth/createuser", {
+        const response = await fetch("https://65ed7bd9c99fd9488a56628c--inotebookbackend.netlify.app/api/notes/fetchallnotes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

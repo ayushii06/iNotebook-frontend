@@ -3,7 +3,7 @@ import NoteContext from "./NoteContext";
 import { useState } from "react";
 
 const NoteState = (props) => {
-  const host = "https://inotebook-backend-part-1.onrender.com"
+  const host = "https://65ed7bd9c99fd9488a56628c--inotebookbackend.netlify.app/api/notes/fetchallnotes"
   const notesInitial = []
   const [notes, setNotes] = useState(notesInitial)
 

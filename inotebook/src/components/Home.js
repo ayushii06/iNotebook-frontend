@@ -9,7 +9,7 @@ const Home = () => {
       <h1 className="text-center display-5 ">Welcome to the "iNoteBook"</h1>
       <h3 className="text-center lead my-5">iNoteBook provides users with a versatile platform for efficient note-taking and organisation.</h3>
       <div className="text-center my-5">
-      {!localStorage.getItem('token')?<Link class="btns" to="/signup" role="button">Get Started</Link>:<Link class="btns" to="/mynotes" role="button">My Notes</Link>}
+      {!localStorage.getItem('token')?<Link className="btns" to="/signup" role="button">Get Started</Link>:<Link className="btns" to="/mynotes" role="button">My Notes</Link>}
       </div>
     </div>
     </>
